@@ -48,7 +48,7 @@ public class FlipperMoveRight : MonoBehaviour
             deactiveFlipper = false;
             timer2 = 0;
             flipactivated = false;
-//            transform.localEulerAngles = startplace;
+            transform.localEulerAngles = startplace;
         }
         if (activeFlipper == true)
         {
