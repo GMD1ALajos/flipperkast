@@ -17,7 +17,7 @@ public class Timelaunchpower : MonoBehaviour
             Input.GetButtonUp("Jump"))  //de knop Jump oftewel spatie moet ingedrukt worden
         {
             player.AddForce(force * timecounter); //de bal, of speler, krijgt een force die nog eens maal de tijd is.
-            timecounter = 0;
+            timecounter = 0; //de timer begint bij 0.
 
         }
         if (Input.GetButtonUp("Jump"))
@@ -39,7 +39,7 @@ public class Timelaunchpower : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
 
-        if (collision.gameObject.tag == "launcher")
+        if (collision.gameObject.tag == "launcher") //De collision zoekt een object met de tag "launcher" en plaatst de functie er op.
         {
             readytolaunch = true; //deze waarde staat op true (waar) alleen als de bal het object met de tag "launcher" aanraakt
 

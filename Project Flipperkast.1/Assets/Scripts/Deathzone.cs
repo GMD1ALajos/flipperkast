@@ -10,7 +10,7 @@ public class Deathzone : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        touch = true;
+        touch = true; //Als de er een collision(aanraking) is gaat de bool op waar > vervolgt in script Respawn.
         //GameObject.("Pinball").GetComponent<Transform>().position = startplace;
 
     }
