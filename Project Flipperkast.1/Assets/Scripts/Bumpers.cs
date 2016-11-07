@@ -12,6 +12,6 @@ public class Bumpers : MonoBehaviour {
         //De directie word bepaald door de aanraking
         direction = collision.contacts[0].normal;
         //De ball krijgt een bepaalde kracht toegewezen
-        ball.AddForce(direction * -55);
+        ball.AddForce(direction * -800);
     }
 }
