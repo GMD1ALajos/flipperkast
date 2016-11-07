@@ -7,6 +7,7 @@ public class Scoresystem : MonoBehaviour
 
     public int score;
     public Text scoretext;
+    public int highscore;
     public Text highscoretext;
 
     // Update is called once per frame
@@ -20,6 +21,10 @@ public class Scoresystem : MonoBehaviour
         + GameObject.Find("WallBumpR").GetComponent<ScoreCount>().score;
         scoretext.text = score.ToString();
         //de score word opgetelt door al deze componenten (dus alle bumpers). Dit word aangegeven via de inspector.
+        if (highscore < score) {
+            highscore = score;
+        }
+        highscoretext.text = highscore.ToString();
     }
 
    

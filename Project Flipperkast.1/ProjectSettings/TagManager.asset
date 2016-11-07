@@ -6,6 +6,7 @@ TagManager:
   tags:
   - launcher
   - bumper
+  - Pinball
   layers:
   - Default
   - TransparentFX

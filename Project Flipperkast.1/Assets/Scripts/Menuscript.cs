@@ -41,6 +41,9 @@ public class Menuscript : MonoBehaviour
         quit.enabled = false;
         back.enabled = false;
         menu.enabled = true;
+        GameObject.Find("Barrier").GetComponent<BoxCollider>().enabled = false;
+        GameObject.Find("Barrier").GetComponent<MeshRenderer>().enabled = false;
+
     }
 
     public void PlayCredits()       //Via de knop credits zie je alleen de credits canvas
@@ -76,6 +79,13 @@ public class Menuscript : MonoBehaviour
         quit.enabled = true;
         back.enabled = false;
         menu.enabled = false;
+        GameObject.Find("Barrier").GetComponent<BoxCollider>().enabled = true;
+        GameObject.Find("Barrier").GetComponent<MeshRenderer>().enabled = true;
+        GameObject.Find("WallBumpL").GetComponent<ScoreCount>().score = 0;
+        GameObject.Find("WallBumpR").GetComponent<ScoreCount>().score = 0;
+        GameObject.Find("BumperLeft").GetComponent<ScoreCount>().score = 0;
+        GameObject.Find("BumperRight").GetComponent<ScoreCount>().score = 0;
+        GameObject.Find("BumperTop").GetComponent<ScoreCount>().score = 0;
     }
     
 
